@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SI TTS Gen</title>
-    <script src="index.js"></script>
 </head>
 <body>
     <h1>Spirit Island Tabletop Simulator Generator</h1>
     <h2>By: AxeCop85</h2>
-    <input type="text" name="spiritName" placeholder="Spirit Name Here (Heart of the Wildfire)" style="width: 495px;">
+    <input type="text" id="spiritName" placeholder="Spirit Name Here (Heart of the Wildfire)" style="width: 495px;">
+    <br>
+    <input type="text" id="complexity" placeholder="Complexity Level" style="width: 495px;">
     <br>
     <img width=500 height=333 src="https://cf.geekdo-images.com/EtaUe3FzUw7FZMht_L2PGg__original/img/aUU4HLDNVDsFXMGatWH0twoE6cE=/0x0/filters:format(jpeg)/pic3726022.jpg"/>
     <img width=500 height=333 src="https://cf.geekdo-images.com/oENWPNJ6ucV3gPiE6MR1EA__medium/img/g2jztPwqpkcEMtbmgl2tM-l5xUE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3726023.jpg"/><br>
-    <input type="text" name="spiritBoardFrontImgUrl" placeholder="Enter the url of your spirit board front here" style="width: 495px;">
-    <input type="text" name="spiritBoardBackImgUrl" placeholder="Enter the url of your spirit board back here" style="width: 495px;">
+    <input type="text" id="spiritBoardFrontImgUrl" placeholder="Enter the url of your spirit board front here" style="width: 495px;">
+    <input type="text" id="spiritBoardBackImgUrl" placeholder="Enter the url of your spirit board back here" style="width: 495px;">
     <br>
     <button onclick="generateJson()" style="margin: 20px;">Refresh Spirit Board Images</button>
     <p>
         Below enter the presence tracks of your spirit including and elements and energy. Comma seperate your values. Use & for any spot with energy + an element. Omit any element choices like "any". Omit all action tiles.
         Elements are: sun, moon, fire, air, water, earth, plant, animal. Look at the bottom of the page for suggested snap points.
     </p>
-    <input type="text" name="topTrack" placeholder="0,fire,1,2,fire&plant,3" style="width: 495px;">
+    <textarea id="presenceTrackData" placeholder="0,fire,1,2,fire&plant,3" style="width: 495px;"></textarea>
     <p>
         Below enter the elemental thresholds of your innate powers. Omit any alternate requirements.
     </p>
-    <input type="text" name="topTrack" placeholder="1plant,3plant,4fire2air,7fire" style="width: 495px;">
-    <input type="text" name="botTrack" placeholder="4fire1plant,4fire2plant,5fire2plant2earth" style="width: 495px;">
+    <input type="text" id="leftInnate" placeholder="1plant,3plant,4fire2air,7fire" style="width: 495px;">
+    <input type="text" id="rightInnate" placeholder="4fire1plant,4fire2plant,5fire2plant2earth" style="width: 495px;">
     <br>
 
     <p>
         Note: I scrapped this page together and didn't have the chance to make it look nice so just add the number of uniques you want to be included. The left most uniques
         will be included first. The right most card represents the card back.
     </p>
-    <input type="text" name="Number of Unique Powers" placeholder="4 (Number of Uniques)" style="width: 172px;">
+    <input type="text" id="numberUniques" placeholder="4 (Number of Uniques)" style="width: 172px;">
     <br>
 
     <img width=179 height=250 src="https://sick.oberien.de/imgs/powers/flames_fury.webp">
@@ -44,20 +45,20 @@
     <img width=179 height=250 src="https://cards.hearthpwn.com/enUS/CFM_637.png?174258">
     <img width=179 height=250 src="https://spiritislandwiki.com/images/2/21/Heart_of_the_Wildfire.png">
     <br>
-    <input type="text" name="Card 1 Url" placeholder="Card 1 Url" style="width: 172px;">
-    <input type="text" name="Card 2 Url" placeholder="Card 2 Url" style="width: 172px;">
-    <input type="text" name="Card 3 Url" placeholder="Card 3 Url" style="width: 172px;">
-    <input type="text" name="Card 4 Url" placeholder="Card 4 Url" style="width: 172px;">
-    <input type="text" name="Card 5 Url" placeholder="Card 5 Url" style="width: 172px;">
-    <input type="text" name="Card 6 Url" placeholder="Card 6 Url" style="width: 172px;">
-    <input type="text" name="Card Back Url" placeholder="Card Back Url" style="width: 172px;">
+    <input type="text" id="card1Url" placeholder="Card 1 Url" style="width: 172px;">
+    <input type="text" id="card2Url" placeholder="Card 2 Url" style="width: 172px;">
+    <input type="text" id="card3Url" placeholder="Card 3 Url" style="width: 172px;">
+    <input type="text" id="card4Url" placeholder="Card 4 Url" style="width: 172px;">
+    <input type="text" id="card5Url" placeholder="Card 5 Url" style="width: 172px;">
+    <input type="text" id="card6Url" placeholder="Card 6 Url" style="width: 172px;">
+    <input type="text" id="cardBackUrl" placeholder="Card Back Url" style="width: 172px;">
     <br>
-    <input type="text" name="Card 1 Data" placeholder="0cost,1sun,1fire,1plant" style="width: 172px;">
-    <input type="text" name="Card 2 Data" placeholder="0cost,1fire,1plant" style="width: 172px;">
-    <input type="text" name="Card 3 Data" placeholder="2cost,1fire,1air" style="width: 172px;">
-    <input type="text" name="Card 4 Data" placeholder="2cost,1fire,1air,1plant" style="width: 172px;">
-    <input type="text" name="Card 5 Data" placeholder="0cost" style="width: 172px;">
-    <input type="text" name="Card 6 Data" placeholder="1cost" style="width: 172px;">
+    <input type="text" id="card1Data" placeholder="Flame's Fury,Fast,0cost,1sun,1fire,1plant" style="width: 172px;">
+    <input type="text" id="card2Data" placeholder="0cost,1fire,1plant" style="width: 172px;">
+    <input type="text" id="card3Data" placeholder="2cost,1fire,1air" style="width: 172px;">
+    <input type="text" id="card4Data" placeholder="2cost,1fire,1air,1plant" style="width: 172px;">
+    <input type="text" id="card5Data" placeholder="0cost" style="width: 172px;">
+    <input type="text" id="card6Data" placeholder="1cost" style="width: 172px;">
     <br>
     <button onclick="generateJson()" style="margin: 20px;">Refresh Unique Power Images</button>
     <br>
@@ -70,6 +71,7 @@
         Wildfire - (start):0energy,(0.0068,-0.3781):1energy...
     </p>
 
+    <script src="index.js"></script>
 
 </body>
 </html>
