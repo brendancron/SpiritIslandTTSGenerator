@@ -1,0 +1,873 @@
+{
+    "SaveName": "",
+    "Date": "",
+    "VersionNumber": "",
+    "GameMode": "",
+    "GameType": "",
+    "GameComplexity": "",
+    "Tags": [],
+    "Gravity": 0.5,
+    "PlayArea": 0.5,
+    "Table": "",
+    "Sky": "",
+    "Note": "",
+    "TabStates": {},
+    "LuaScript": "",
+    "LuaScriptState": "",
+    "XmlUI": "",
+    "ObjectStates": [
+      {
+        "GUID": "Rainbow_Discovers_Its_Colors",
+        "Name": "Custom_Model_Bag",
+        "Transform": {
+          "posX": 55.4,
+          "posY": 0.8031,
+          "posZ": 72.53,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 5.46,
+          "scaleY": 1.0,
+          "scaleZ": 5.46
+        },
+        "Nickname": "Rainbow Discovers Its Colors",
+        "Description": "Custom",
+        "GMNotes": "",
+        "AltLookAngle": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "ColorDiffuse": {
+          "r": 0.568599939,
+          "g": 0.5608,
+          "b": 0.5608,
+          "a": 0.0
+        },
+        "Tags": [
+          "Custom",
+          "Spirit",
+          "Very High"
+        ],
+        "LayoutGroupSortIndex": 0,
+        "Value": 0,
+        "Locked": true,
+        "Grid": false,
+        "Snap": false,
+        "IgnoreFoW": false,
+        "MeasureMovement": false,
+        "DragSelectable": true,
+        "Autoraise": true,
+        "Sticky": true,
+        "Tooltip": true,
+        "GridProjection": false,
+        "HideWhenFaceDown": false,
+        "Hands": false,
+        "MaterialIndex": -1,
+        "MeshIndex": -1,
+        "CustomMesh": {
+          "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1847038070178749845/F9B69FD810B4A07F92D525124179BDDABADB884E/",
+          "DiffuseURL": "",
+          "NormalURL": "",
+          "ColliderURL": "",
+          "Convex": true,
+          "MaterialIndex": 3,
+          "TypeIndex": 6,
+          "CustomShader": {
+            "SpecularColor": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0
+            },
+            "SpecularIntensity": 0.0,
+            "SpecularSharpness": 2.0,
+            "FresnelStrength": 0.0
+          },
+          "CastShadows": true
+        },
+        "Bag": {
+          "Order": 0
+        },
+        "LuaScript": "-- Spirit Panel for MJ & iakona's Spirit Island Mod --\nuseProgression = false\nuseAspect = 2\n\nfunction onLoad(saved_data)\n    Color.Add(\"SoftBlue\", Color.new(0.53,0.92,1))\n    Color.Add(\"SoftYellow\", Color.new(1,0.8,0.5))\n    getObjectFromGUID(\"SourceSpirit\").call(\"load\", {obj = self, saved_data = saved_data})\nend",
+        "LuaScriptState": "",
+        "XmlUI": "",
+        "ContainedObjects": [
+          {
+            "GUID": "Kaleidoscopic_Confusion",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Kaleidoscopic Confusion",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Fast",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://www.dropbox.com/s/zdjat0246kv7nw8/Kaleidoscopic_Confusion_PowerCard.png?raw=1",
+                "BackURL": "https://www.dropbox.com/s/gpq08dm5u4jbyul/CardBack.png?raw=1",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"00001111\"\nenergy=0\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Prismatic_Blast",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Prismatic Blast",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Slow",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://www.dropbox.com/s/whlglk5893s8uav/Prismatic_Blast_PowerCard.png?raw=1",
+                "BackURL": "https://www.dropbox.com/s/gpq08dm5u4jbyul/CardBack.png?raw=1",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"01110000\"\nenergy=1\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Break_down_into_raw_materials",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Break down into raw materials",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Fast",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://www.dropbox.com/s/fpapeshziv1tl0a/Break_down_into_raw_materials_PowerCard.png?raw=1",
+                "BackURL": "https://www.dropbox.com/s/gpq08dm5u4jbyul/CardBack.png?raw=1",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"00000000\"\nenergy=0\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Iridescent_Glow",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Iridescent Glow",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Fast",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://www.dropbox.com/s/i8l2ewcjjga08b1/Iridescent_Glow_PowerCard.png?raw=1",
+                "BackURL": "https://www.dropbox.com/s/gpq08dm5u4jbyul/CardBack.png?raw=1",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"11111111\"\nenergy=2\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Power_Growth",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Power Growth",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Fast",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://www.dropbox.com/s/gjynwr5awosllp6/Power_Growth.png?raw=1",
+                "BackURL": "https://www.dropbox.com/s/gpq08dm5u4jbyul/CardBack.png?raw=1",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"00000000\"\nenergy=0\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Reclaim_Growth",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Reclaim Growth",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Fast",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://www.dropbox.com/s/hprlxgxrikjkigv/Reclaim_Growth.png?raw=1",
+                "BackURL": "https://www.dropbox.com/s/gpq08dm5u4jbyul/CardBack.png?raw=1",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"00000000\"\nenergy=0\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Boosting_Growth",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Boosting Growth",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Fast",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://www.dropbox.com/s/l9y0xdq8cdovs5s/Boosting_Growth.png?raw=1",
+                "BackURL": "https://www.dropbox.com/s/gpq08dm5u4jbyul/CardBack.png?raw=1",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"00000000\"\nenergy=0\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Ramping_Growth",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Ramping Growth",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Fast",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://www.dropbox.com/s/fqar55hw20lm08m/Ramping_Growth.png?raw=1",
+                "BackURL": "https://www.dropbox.com/s/gpq08dm5u4jbyul/CardBack.png?raw=1",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"00000000\"\nenergy=0\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Rainbow_Discovers_Its_Colors",
+            "Name": "Custom_Tile",
+            "Transform": {
+              "posX": 57.98,
+              "posY": 1.22376359,
+              "posZ": 73.1,
+              "rotX": 6.282819E-05,
+              "rotY": 180.0,
+              "rotZ": 179.999786,
+              "scaleX": 5.46,
+              "scaleY": 1.0,
+              "scaleZ": 5.46
+            },
+            "Nickname": "Rainbow Discovers Its Colors",
+            "Description": "Custom",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "ColorDiffuse": {
+              "r": 0.200299948,
+              "g": 0.160299957,
+              "b": 0.151799977
+            },
+            "Tags": [
+              "Custom",
+              "Spirit",
+              "Very High"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": true,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": false,
+            "Hands": false,
+            "CustomImage": {
+              "ImageURL": "https://www.dropbox.com/s/zxe6n73z1fu3edr/Rainbow_Discovers_Its_Colors_SpiritBoard.png?raw=1",
+              "ImageSecondaryURL": "https://www.dropbox.com/s/o92t0nifz95prh9/Rainbow_Discovers_Its_Colors_SpiritBoardBack.png?raw=1",
+              "ImageScalar": 1,
+              "WidthScale": 0,
+              "CustomTile": {
+                "Type": 0,
+                "Thickness": 0.2,
+                "Stackable": false,
+                "Stretch": true
+              }
+            },
+            "LuaScript": "-- Spirit Panel for MJ & iakona's Spirit Island Mod --\nuseProgression = false\nuseAspect = 2\n\nfunction onLoad(saved_data)\n    Color.Add(\"SoftBlue\", Color.new(0.53,0.92,1))\n    Color.Add(\"SoftYellow\", Color.new(1,0.8,0.5))\n    getObjectFromGUID(\"SourceSpirit\").call(\"load\", {obj = self, saved_data = saved_data})\nend",
+            "LuaScriptState": "{\"bonusEnergy\":[],\"thresholds\":[],\"trackElements\":[],\"trackEnergy\":[{\"count\":4,\"position\":{\"x\":-0.9584,\"y\":0,\"z\":-0.4749}},{\"count\":3,\"position\":{\"x\":-0.7307,\"y\":0,\"z\":-0.4749}},{\"count\":2,\"position\":{\"x\":-0.2753,\"y\":0,\"z\":-0.4749}},{\"count\":1,\"position\":{\"x\":-0.0476,\"y\":0,\"z\":-0.4749}},{\"count\":0,\"position\":{\"x\":0.1801,\"y\":0,\"z\":-0.4749}}]}",
+            "XmlUI": "",
+            "AttachedSnapPoints": [
+              {
+                "Position": {
+                  "x": -0.0476,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.2753,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.503,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.7307,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.9584,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.0476,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.2753,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.503,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.7307,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.9584,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -1.1861,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              }
+            ]
+          }
+        ],
+        "ChildObjects": [
+          {
+            "GUID": "Rainbow_Discovers_Its_Colors",
+            "Name": "Custom_Tile",
+            "Transform": {
+              "posX": 0.0,
+              "posY": 0.2,
+              "posZ": 0.0,
+              "rotX": 0.0,
+              "rotY": 0.0,
+              "rotZ": 180.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0
+            },
+            "Nickname": "Rainbow Discovers Its Colors",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "ColorDiffuse": {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0
+            },
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": false,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": false,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": false,
+            "Hands": false,
+            "CustomImage": {
+              "ImageURL": "https://www.dropbox.com/s/zxe6n73z1fu3edr/Rainbow_Discovers_Its_Colors_SpiritBoard.png?raw=1",
+              "ImageSecondaryURL": "https://www.dropbox.com/s/o92t0nifz95prh9/Rainbow_Discovers_Its_Colors_SpiritBoardBack.png?raw=1",
+              "ImageScalar": 1,
+              "WidthScale": 0,
+              "CustomTile": {
+                "Type": 0,
+                "Thickness": 0.2,
+                "Stackable": false,
+                "Stretch": true
+              }
+            },
+            "LuaScript": "",
+            "LuaScriptState": "",
+            "XmlUI": "",
+            "AttachedSnapPoints": [
+              {
+                "Position": {
+                  "x": -0.0476,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.2753,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.503,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.7307,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.9584,
+                  "y": 0.2,
+                  "z": -0.4749
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.0476,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.2753,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.503,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.7307,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.9584,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              },
+              {
+                "Position": {
+                  "x": -1.1861,
+                  "y": 0.2,
+                  "z": -0.1453
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
