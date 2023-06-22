@@ -12,19 +12,19 @@
     <br>
     <input type="text" id="complexity" placeholder="Complexity Level" style="width: 495px;">
     <br>
-    <img width=500 height=333 src="https://cf.geekdo-images.com/EtaUe3FzUw7FZMht_L2PGg__original/img/aUU4HLDNVDsFXMGatWH0twoE6cE=/0x0/filters:format(jpeg)/pic3726022.jpg"/>
-    <img width=500 height=333 src="https://cf.geekdo-images.com/oENWPNJ6ucV3gPiE6MR1EA__medium/img/g2jztPwqpkcEMtbmgl2tM-l5xUE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3726023.jpg"/><br>
+    <img id="spiritBoardFrontImg" width=500 height=333 src="https://cf.geekdo-images.com/EtaUe3FzUw7FZMht_L2PGg__original/img/aUU4HLDNVDsFXMGatWH0twoE6cE=/0x0/filters:format(jpeg)/pic3726022.jpg"/>
+    <img id="spiritBoardBackImg" width=500 height=333 src="https://cf.geekdo-images.com/oENWPNJ6ucV3gPiE6MR1EA__medium/img/g2jztPwqpkcEMtbmgl2tM-l5xUE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3726023.jpg"/>
+    <br>
     <input type="text" id="spiritBoardFrontImgUrl" placeholder="Enter the url of your spirit board front here" style="width: 495px;">
     <input type="text" id="spiritBoardBackImgUrl" placeholder="Enter the url of your spirit board back here" style="width: 495px;">
     <br>
-    <button onclick="generateJson()" style="margin: 20px;">Refresh Spirit Board Images</button>
     <p>
-        Below enter the presence tracks of your spirit including and elements and energy. Comma seperate your values. Use & for any spot with energy + an element. Omit any element choices like "any". Omit all action tiles.
-        Elements are: sun, moon, fire, air, water, earth, plant, animal. Look at the bottom of the page for suggested snap points.
+        Below enter the presence tracks snap points of your spirit including and elements and energy. Look at the bottom of the page for examples.
     </p>
     <textarea id="presenceTrackData" placeholder="0,fire,1,2,fire&plant,3" style="width: 495px;"></textarea>
     <p>
         Below enter the elemental thresholds of your innate powers. Omit any alternate requirements.
+        This is currently unimplemented.
     </p>
     <input type="text" id="leftInnate" placeholder="1plant,3plant,4fire2air,7fire" style="width: 495px;">
     <input type="text" id="rightInnate" placeholder="4fire1plant,4fire2plant,5fire2plant2earth" style="width: 495px;">
@@ -37,13 +37,13 @@
     <input type="text" id="numberUniques" placeholder="4 (Number of Uniques)" style="width: 172px;">
     <br>
 
-    <img width=179 height=250 src="https://sick.oberien.de/imgs/powers/flames_fury.webp">
-    <img width=179 height=250 src="https://sick.oberien.de/imgs/powers/threatening_flames.webp">
-    <img width=179 height=250 src="https://sick.oberien.de/imgs/powers/flashfires.webp">
-    <img width=179 height=250 src="https://sick.oberien.de/imgs/powers/asphyxiating_smoke.webp">
-    <img width=179 height=250 src="https://m.media-amazon.com/images/I/51ejy7Mt4ML._AC_UF894,1000_QL80_.jpg">
-    <img width=179 height=250 src="https://cards.hearthpwn.com/enUS/CFM_637.png?174258">
-    <img width=179 height=250 src="https://spiritislandwiki.com/images/2/21/Heart_of_the_Wildfire.png">
+    <img id = "card1Img" width=179 height=250 src="https://sick.oberien.de/imgs/powers/flames_fury.webp">
+    <img id = "card2Img" width=179 height=250 src="https://sick.oberien.de/imgs/powers/threatening_flames.webp">
+    <img id = "card3Img" width=179 height=250 src="https://sick.oberien.de/imgs/powers/flashfires.webp">
+    <img id = "card4Img" width=179 height=250 src="https://sick.oberien.de/imgs/powers/asphyxiating_smoke.webp">
+    <img id = "card5Img" width=179 height=250 src="https://m.media-amazon.com/images/I/51ejy7Mt4ML._AC_UF894,1000_QL80_.jpg">
+    <img id = "card6Img" width=179 height=250 src="https://cards.hearthpwn.com/enUS/CFM_637.png?174258">
+    <img id = "cardBackImg" width=179 height=250 src="https://spiritislandwiki.com/images/2/21/Heart_of_the_Wildfire.png">
     <br>
     <input type="text" id="card1Url" placeholder="Card 1 Url" style="width: 172px;">
     <input type="text" id="card2Url" placeholder="Card 2 Url" style="width: 172px;">
@@ -53,22 +53,33 @@
     <input type="text" id="card6Url" placeholder="Card 6 Url" style="width: 172px;">
     <input type="text" id="cardBackUrl" placeholder="Card Back Url" style="width: 172px;">
     <br>
-    <input type="text" id="card1Data" placeholder="Flame's Fury,Fast,0cost,1sun,1fire,1plant" style="width: 172px;">
-    <input type="text" id="card2Data" placeholder="0cost,1fire,1plant" style="width: 172px;">
-    <input type="text" id="card3Data" placeholder="2cost,1fire,1air" style="width: 172px;">
-    <input type="text" id="card4Data" placeholder="2cost,1fire,1air,1plant" style="width: 172px;">
-    <input type="text" id="card5Data" placeholder="0cost" style="width: 172px;">
-    <input type="text" id="card6Data" placeholder="1cost" style="width: 172px;">
-    <br>
-    <button onclick="generateJson()" style="margin: 20px;">Refresh Unique Power Images</button>
+    <input type="text" id="card1Data" placeholder="Flame's Fury,Fast,Fast,0energy,1sun,1fire,1plant" style="width: 172px;">
+    <input type="text" id="card2Data" placeholder="Flame's Fury,Fast,Fast,0energy,1sun,1fire,1plant" style="width: 172px;">
+    <input type="text" id="card3Data" placeholder="Flame's Fury,Fast,Fast,0energy,1sun,1fire,1plant" style="width: 172px;">
+    <input type="text" id="card4Data" placeholder="Flame's Fury,Fast,Fast,0energy,1sun,1fire,1plant" style="width: 172px;">
+    <input type="text" id="card5Data" placeholder="Jar Of Greed,Fast,Fast,0energy,1sun,1fire,1plant" style="width: 172px;">
+    <input type="text" id="card6Data" placeholder="Patches The Pirate,Fast,Fast,0energy,1sun,1fire,1plant" style="width: 172px;">
     <br>
     <button onclick="generateJson()" style="margin: 20px;">Generate TTS Spirit</button>
     <br>
     <p>
         Here are some sample snap points presence tracks for spirit island spirits. You may have to tweak these based on your spirit or board image.
     </p>
+    <h3>Dances Up Earthquakes</h3>
     <p>
-        Wildfire - (start):0energy,(0.0068,-0.3781):1energy...
+        (start):1energy<br>
+        (-0.04, -0.4)<br>
+        (-0.28, -0.4):2energy<br>
+        (-0.51, -0.4)<br>
+        (-0.75, -0.4):3energy<br>
+        (-0.98, -0.4)<br>
+        (-1.23, -0.4):4energy<br>
+        (-0.04, -0.1)<br>
+        (-0.28, -0.1):1moon,1fire<br>
+        (-0.51, -0.1)<br>
+        (-0.75, -0.1):1earth<br>
+        (-0.98, -0.1)<br>
+        (-1.23, -0.1)<br>
     </p>
 
     <script src="index.js"></script>

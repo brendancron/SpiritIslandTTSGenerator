@@ -25,18 +25,27 @@ var card6Data = localStorage.getItem("card6Data");
 document.getElementById("spiritName").value = spiritName || "";
 document.getElementById("complexity").value = complexity || "";
 document.getElementById("spiritBoardFrontImgUrl").value = spiritBoardFrontImgUrl || "";
+document.getElementById("spiritBoardFrontImg").src = spiritBoardFrontImgUrl || "https://cf.geekdo-images.com/EtaUe3FzUw7FZMht_L2PGg__original/img/aUU4HLDNVDsFXMGatWH0twoE6cE=/0x0/filters:format(jpeg)/pic3726022.jpg";
 document.getElementById("spiritBoardBackImgUrl").value = spiritBoardBackImgUrl || "";
+document.getElementById("spiritBoardBackImg").src = spiritBoardBackImgUrl || "https://cf.geekdo-images.com/oENWPNJ6ucV3gPiE6MR1EA__medium/img/g2jztPwqpkcEMtbmgl2tM-l5xUE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3726023.jpg";
 document.getElementById("presenceTrackData").value = presenceTrackData || "";
 document.getElementById("leftInnate").value = leftInnate || "";
 document.getElementById("rightInnate").value = rightInnate || "";
 document.getElementById("numberUniques").value = numberUniques || "";
 document.getElementById("card1Url").value = card1Url || "";
+document.getElementById("card1Img").src = card1Url || "https://sick.oberien.de/imgs/powers/flames_fury.webp";
 document.getElementById("card2Url").value = card2Url || "";
+document.getElementById("card2Img").src = card2Url || "https://sick.oberien.de/imgs/powers/threatening_flames.webp";
 document.getElementById("card3Url").value = card3Url || "";
+document.getElementById("card3Img").src = card3Url || "https://sick.oberien.de/imgs/powers/flashfires.webp";
 document.getElementById("card4Url").value = card4Url || "";
+document.getElementById("card4Img").src = card4Url || "https://sick.oberien.de/imgs/powers/asphyxiating_smoke.webp";
 document.getElementById("card5Url").value = card5Url || "";
+document.getElementById("card5Img").src = card5Url || "https://m.media-amazon.com/images/I/51ejy7Mt4ML._AC_UF894,1000_QL80_.jpg";
 document.getElementById("card6Url").value = card6Url || "";
+document.getElementById("card6Img").src = card6Url || "https://cards.hearthpwn.com/enUS/CFM_637.png?174258";
 document.getElementById("cardBackUrl").value = cardBackUrl || "";
+document.getElementById("cardBackImg").src = cardBackUrl || "https://spiritislandwiki.com/images/2/21/Heart_of_the_Wildfire.png";
 document.getElementById("card1Data").value = card1Data || "";
 document.getElementById("card2Data").value = card2Data || "";
 document.getElementById("card3Data").value = card3Data || "";
@@ -53,9 +62,11 @@ document.getElementById("complexity").addEventListener("input", function() {
 });
 document.getElementById("spiritBoardFrontImgUrl").addEventListener("input", function() {
     localStorage.setItem("spiritBoardFrontImgUrl", this.value);
+    document.getElementById("spiritBoardFrontImg").src = this.value;
 });
 document.getElementById("spiritBoardBackImgUrl").addEventListener("input", function() {
     localStorage.setItem("spiritBoardBackImgUrl", this.value);
+    document.getElementById("spiritBoardBackImg").src = this.value;
 });
 document.getElementById("presenceTrackData").addEventListener("input", function() {
     localStorage.setItem("presenceTrackData", this.value);
@@ -71,24 +82,31 @@ document.getElementById("numberUniques").addEventListener("input", function() {
 });
 document.getElementById("card1Url").addEventListener("input", function() {
     localStorage.setItem("card1Url", this.value);
+    document.getElementById("card1Img").src = this.value;
 });
 document.getElementById("card2Url").addEventListener("input", function() {
     localStorage.setItem("card2Url", this.value);
+    document.getElementById("card2Img").src = this.value;
 });
 document.getElementById("card3Url").addEventListener("input", function() {
     localStorage.setItem("card3Url", this.value);
+    document.getElementById("card3Img").src = this.value;
 });
 document.getElementById("card4Url").addEventListener("input", function() {
     localStorage.setItem("card4Url", this.value);
+    document.getElementById("card4Img").src = this.value;
 });
 document.getElementById("card5Url").addEventListener("input", function() {
     localStorage.setItem("card5Url", this.value);
+    document.getElementById("card5Img").src = this.value;
 });
 document.getElementById("card6Url").addEventListener("input", function() {
     localStorage.setItem("card6Url", this.value);
+    document.getElementById("card6Img").src = this.value;
 });
 document.getElementById("cardBackUrl").addEventListener("input", function() {
     localStorage.setItem("cardBackUrl", this.value);
+    document.getElementById("cardBackImg").src = this.value;
 });
 document.getElementById("card1Data").addEventListener("input", function() {
     localStorage.setItem("card1Data", this.value);
@@ -245,6 +263,8 @@ function generateJson() {
 
     containedObjects.push(card1, card2, card3, card4);
 
+    console.log(numUniques);
+
     if(numUniques > 4) {
         var card5 = genCard(card5Url, card5Data, cardBackUrl);
         containedObjects.push(card5);
@@ -254,6 +274,8 @@ function generateJson() {
         var card6 = genCard(card6Url, card6Data, cardBackUrl);
         containedObjects.push(card6);
     }
+
+    console.log(containedObjects);
 
     //Presence Tracks Data
     var trackEnergy = [];

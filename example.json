@@ -150,7 +150,7 @@
                 "Type": 0
               }
             },
-            "LuaScript": "elements=\"10100010\"\nenergy=0\n",
+            "LuaScript": "elements=\"01001100\"\nenergy=1\n",
             "LuaScriptState": "{\"thresholds\":[]}",
             "XmlUI": ""
           },
@@ -212,7 +212,7 @@
                 "Type": 0
               }
             },
-            "LuaScript": "elements=\"10100010\"\nenergy=0\n",
+            "LuaScript": "elements=\"01001100\"\nenergy=1\n",
             "LuaScriptState": "{\"thresholds\":[]}",
             "XmlUI": ""
           },
@@ -274,7 +274,7 @@
                 "Type": 0
               }
             },
-            "LuaScript": "elements=\"10100010\"\nenergy=0\n",
+            "LuaScript": "elements=\"01001100\"\nenergy=1\n",
             "LuaScriptState": "{\"thresholds\":[]}",
             "XmlUI": ""
           },
@@ -336,7 +336,131 @@
                 "Type": 0
               }
             },
-            "LuaScript": "elements=\"10100010\"\nenergy=0\n",
+            "LuaScript": "elements=\"01001100\"\nenergy=1\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Exaltation_of_Echoed_Steps",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Exaltation of Echoed Steps",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Fast",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://cf.geekdo-images.com/5aSqLjTgcYiUbA7MNoHlsg__medium/img/yAJRY_lB_afmTq-S93OpU1iVC4w=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7170775.jpg",
+                "BackURL": "https://cf.geekdo-images.com/5aSqLjTgcYiUbA7MNoHlsg__medium/img/yAJRY_lB_afmTq-S93OpU1iVC4w=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7170775.jpg",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"01001100\"\nenergy=1\n",
+            "LuaScriptState": "{\"thresholds\":[]}",
+            "XmlUI": ""
+          },
+          {
+            "GUID": "Exaltation_of_Echoed_Steps",
+            "Name": "CardCustom",
+            "Transform": {
+              "posX": 0,
+              "posY": 0,
+              "posZ": 0,
+              "rotX": 0,
+              "rotY": 180,
+              "rotZ": 0,
+              "scaleX": 1.53,
+              "scaleY": 1,
+              "scaleZ": 1.53
+            },
+            "Nickname": "Exaltation of Echoed Steps",
+            "Description": "",
+            "GMNotes": "",
+            "AltLookAngle": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "ColorDiffuse": {
+              "r": 0.7132,
+              "g": 0.7132,
+              "b": 0.7132
+            },
+            "Tags": [
+              "Fast",
+              "Unique"
+            ],
+            "LayoutGroupSortIndex": 0,
+            "Value": 0,
+            "Locked": false,
+            "Grid": false,
+            "Snap": true,
+            "IgnoreFoW": false,
+            "MeasureMovement": false,
+            "DragSelectable": true,
+            "Autoraise": true,
+            "Sticky": true,
+            "Tooltip": true,
+            "GridProjection": false,
+            "HideWhenFaceDown": true,
+            "Hands": true,
+            "CardID": 45703,
+            "SidewaysCard": false,
+            "CustomDeck": {
+              "457": {
+                "FaceURL": "https://cf.geekdo-images.com/5aSqLjTgcYiUbA7MNoHlsg__medium/img/yAJRY_lB_afmTq-S93OpU1iVC4w=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7170775.jpg",
+                "BackURL": "https://cf.geekdo-images.com/5aSqLjTgcYiUbA7MNoHlsg__medium/img/yAJRY_lB_afmTq-S93OpU1iVC4w=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7170775.jpg",
+                "NumWidth": 1,
+                "NumHeight": 1,
+                "BackIsHidden": true,
+                "UniqueBack": false,
+                "Type": 0
+              }
+            },
+            "LuaScript": "elements=\"01001100\"\nenergy=1\n",
             "LuaScriptState": "{\"thresholds\":[]}",
             "XmlUI": ""
           },
