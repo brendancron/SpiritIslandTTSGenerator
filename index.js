@@ -530,7 +530,7 @@ function generateJson() {
         ObjectStates: [
             {
                 GUID: spiritNameStandardized,
-                Name: "Custom Model Bag",
+                Name: "Custom_Model_Bag",
                 Transform: {
                     posX: 55.4,
                     posY: 0.8031,
